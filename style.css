@@ -139,18 +139,6 @@ li {
 	width:15px;
 }
 
-.check-mark {
-	display:none;
-	position:inline;
-	cursor: pointer;
-	margin-top: 8px;
-	margin-left:5px;
-	float: left;
-	height: 22px;
-	width: 22px;
-	background: no-repeat url('checkmark.png');
-	background-size: 70% 70%;
-}
 
 .drag {
 	position:inline;
