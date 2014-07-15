@@ -56,5 +56,5 @@ $(document).on("click", ".delete", function(){
 $(document).on("click", ".check-box", function(){
         console.log("Marking li as complete");
         $(this).closest('li').addClass("completed");
-        $(this).closest('li').appendTo(".list-items");
+        $(this).closest('li').hide().appendTo(".list-items").show('fast');
 });
