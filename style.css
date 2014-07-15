@@ -17,10 +17,10 @@ body {
 	background-image: linear-gradient(to bottom, #292929 0%, #0D0D0D 100%);
 	background-size: 100% 1500px;
 	background-repeat: no-repeat;
-	font-family: 'Lato', sans-serif;
+	
 	
 	 BACKGROUND IMAGE */
-
+	font-family: 'Lato', sans-serif;
 	background: no-repeat url('wood-rope.jpg');
 	background-size: 100% Auto;
 
@@ -71,6 +71,7 @@ li {
 }
 
 .list-items li {
+	font-size:14px;
 	box-shadow: 
 		0 3px 4px #fff, /*bottom external highlight*/
 		0 -2px 2px #666, /*top external shadow*/ 

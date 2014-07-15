@@ -23,7 +23,7 @@ $(document).ready(function(){
     /*Takes returned value from previous function and manipulates it*/
     function postItem() {
         var item = $('.add-items').val();
-        var work = '<li>'+ item +'</li>';
+        var work = '<li><div class="check-box"></div>'+ item +'<div class="drag"></div></li>';
         $('.list-items').prepend(work);
         $('.add-items').val('');
         $('.list-items p:first-child')
