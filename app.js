@@ -53,17 +53,7 @@ $(document).on("click", ".delete", function(){
 });
 
 /*Allows user to check off items*/
-$(document).on("click", ".cross-off", function(){
-    if (!$(this).closest('p').hasClass('strikethrough')) {
-        console.log("I am going to add a strikethrough");
-        $(this).closest('p').addClass("strikethrough");
-        $(this).siblings('.delete').addClass("alt-delete");
-        $(this).addClass("alt-cross-off");
-   }
-   else {
-        console.log("I am going to remove a strikethrough");
-        $(this).closest('p').removeClass("strikethrough");
-        $(this).siblings('.delete').removeClass("alt-delete");
-        $(this).removeClass("alt-cross-off");
-   }
+$(document).on("click", ".check-box", function(){
+        console.log("Marking li as complete");
+        $(this).closest('li').toggleClass("completed");
 });
