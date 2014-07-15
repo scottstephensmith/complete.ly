@@ -55,5 +55,6 @@ $(document).on("click", ".delete", function(){
 /*Allows user to check off items*/
 $(document).on("click", ".check-box", function(){
         console.log("Marking li as complete");
-        $(this).closest('li').toggleClass("completed");
+        $(this).closest('li').addClass("completed");
+        $(this).closest('li').appendTo(".list-items");
 });
