@@ -1,7 +1,8 @@
 
 
 body {
-	/* BACKGROUND GRADIENT */
+	/* BACKGROUND GRADIENT
+
 	background-image: -webkit-gradient(
 	linear,
 	left top,
@@ -17,6 +18,12 @@ body {
 	background-size: 100% 1500px;
 	background-repeat: no-repeat;
 	font-family: 'Lato', sans-serif;
+	
+	 BACKGROUND IMAGE */
+
+	background: no-repeat url('wood-rope.jpg');
+	background-size: 100% Auto;
+
 }
 
 .container {
@@ -32,8 +39,13 @@ body {
 	width:350px;
 	min-height:350px;
 	display:block;
+	position:relative;
 	margin: auto;
 	padding-bottom:10px;
+	/* shadow */
+	-webkit-box-shadow: 10px 10px 82px 6px rgba(0,0,0,0.58);
+	-moz-box-shadow: 10px 10px 82px 6px rgba(0,0,0,0.58);
+	box-shadow: 10px 10px 82px 6px rgba(0,0,0,0.58);
 }
 
 /* CONTENTS OF THE TO-DO LIST */
@@ -48,6 +60,7 @@ h1 {
 	padding:10px;
 	font-family: 'Pacifico', cursive;
 	color:#800000;
+	margin-bottom: 0px;
 }
 
 li {
@@ -58,7 +71,6 @@ li {
 }
 
 .list-items li {
-	cursor: move;
 	box-shadow: 
 		0 3px 4px #fff, /*bottom external highlight*/
 		0 -2px 2px #666, /*top external shadow*/ 
@@ -92,9 +104,45 @@ li {
 	border-radius: 10px;
 	color: #fff;
     display: inline-block;
-    font-size: 12pt;
+    font-size: 10pt;
     height: 20px;
     line-height: 14pt;
     text-align: center;
     width: 250px;
+    margin-top: -15px;
+}
+
+.reset {
+	cursor:pointer;
+	position:absolute;
+	bottom:0;
+	right:0;
+    font-size:8px;
+    color:#800000;
+    padding-bottom:2px;
+    padding-right:6px;
+}
+
+.check-box {
+	position:inline;
+	cursor: pointer;
+	margin-top: 8px;
+	margin-left:5px;
+	float: left;
+	height: 22px;
+	width: 22px;
+	background: no-repeat url('checkbox.png');
+	background-size: 70% 70%;
+}
+
+.drag {
+	position:inline;
+	cursor: move;
+	margin-top: 8px;
+	margin-right:5px;
+	float: right;
+	height: 22px;
+	width: 22px;
+	background: no-repeat url('drag.png');
+	background-size: 70% 70%;
 }
