@@ -5,12 +5,13 @@ $(document).ready(function(){
 	var submissions = 0;
 
 	/* List properties */
-	$(".list-items").sortable();
+	$(".list-items").sortable({ axis: "y" });
 	$(".list-items").disableSelection();
 
 	/* Allows an "Enter" keystroke to work as a submit button for input field */
 	function getItem() {
 		$('.add-items').keydown(function (enter) {
+			console.log("typed character in list")
 			if (enter.keyCode == 13) {
 				postItem();
 			}
@@ -23,13 +24,15 @@ $(document).ready(function(){
 	function postItem() {
 		var item = $('.add-items').val();
 		var work = '<li><img class="check-box" src="checkbox.png"/>'+ item +'<img class="drag" src="drag.png"></li>';
+		console.log("item posted to list")
 		$('.list-items').prepend(work); /* taking the value defined above and putting it at front of list */
-		 $('.add-items').val('');
+		$('.add-items').val('');
 	}
 
 
 	/*Clears all items on list*/
 	$(document).on("click", ".reset", function(){
+		console.log("clearing list")
 		$(".list-items").empty();
 		submissions = 0;
 	});
