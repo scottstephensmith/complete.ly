@@ -150,3 +150,15 @@ li {
 	width: 15px;
 }
 
+.archive {
+	position:absolute;
+	display:inline-block;
+	margin-left:-47px;
+	margin-bottom:7px;
+	bottom:0;
+	cursor:pointer;
+	font-size:10px;
+	color:#800000;
+}
+
+.hide {display:none;}
