@@ -12,13 +12,6 @@ $(document).ready(function(){
 	function getItem() {
 		$('.add-items').keydown(function (enter) {
 			console.log("typed character in list")
-			   	str = document.reg;
-			    if (str.work.value.trim() == "") {
-			        alert("Enter your name");
-			        str.name.focus();
-			        return false;
-			    }
-
 			if (enter.keyCode == 13) {
 				postItem();
 			}
